@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var Shape_1 = require("./Shape");
+var Group_1 = require("./Group");
+var g1 = new Group_1.Group();
+g1.add(new Shape_1.Shape());
+g1.add(new Shape_1.Shape());
+g1.render();
+var g2 = new Group_1.Group();
+g2.add(new Shape_1.Shape());
+g2.add(new Shape_1.Shape());
+g2.render();

@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var DataSource_1 = require("./DataSource");
+var Chart_1 = require("./Chart");
+var SpreadSheet_1 = require("./SpreadSheet");
+var dataSource = new DataSource_1.DataSource();
+var ss = new SpreadSheet_1.SpreadSheet();
+var ss2 = new SpreadSheet_1.SpreadSheet();
+var chart = new Chart_1.Chart();
+dataSource.addObserver(ss);
+dataSource.addObserver(ss2);
+dataSource.addObserver(chart);
+dataSource.setValue(1);
