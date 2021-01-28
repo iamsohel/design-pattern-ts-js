@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var CompressedCloudStream_1 = require("./CompressedCloudStream");
+var EncryptedCloudStream_1 = require("./EncryptedCloudStream");
+var CloudStream_1 = require("./CloudStream");
+var cs = new CloudStream_1.CloudStream();
+var ecs = new EncryptedCloudStream_1.EncryptedCloudStream();
+var compressStream = new CompressedCloudStream_1.CompressedCloudStream();
+cs.write('data');
+ecs.write('dafsf');
+compressStream.write("hi am sohel");
